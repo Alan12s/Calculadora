@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.mode-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.calculator {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: rgb(192, 19, 163);
+}
+
+.dark .calculator {
+  background-color: #333;
+  color: white;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.dark button {
+  background-color: #555;
+  color: white;
+}
+
+.dark button:hover {
+  background-color: #666;
+}
+
+.display {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  font-size: 32px;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.dark .display {
+  background-color: #111;
+}
+
+button.wide {
+  grid-column: span 2;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #756060;
+  text-align: center;
+}
+
+.dark .footer {
+  background-color: #333;
+}
